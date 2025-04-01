@@ -1,0 +1,53 @@
+USE [Test_Database]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Test_TSV](
+	[UID] [int] IDENTITY(1,1) NOT NULL,
+	[Test_No] [varchar](50) NULL,
+	[AVG_A] [varchar](50) NULL,
+	[MIN_A] [varchar](50) NULL,
+	[MAX_A] [varchar](50) NULL,
+	[CVP_A] [varchar](50) NULL,
+	[AVG_C] [varchar](50) NULL,
+	[MIN_C] [varchar](50) NULL,
+	[MAX_C] [varchar](50) NULL,
+	[CVP_C] [varchar](50) NULL,
+	[AVG_D] [varchar](50) NULL,
+	[MIN_D] [varchar](50) NULL,
+	[MAX_D] [varchar](50) NULL,
+	[CVP_D] [varchar](50) NULL,
+	[AVG_E] [varchar](50) NULL,
+	[MIN_E] [varchar](50) NULL,
+	[MAX_E] [varchar](50) NULL,
+	[CVP_E] [varchar](50) NULL,
+	[AVG_F] [varchar](50) NULL,
+	[MAX_F] [varchar](50) NULL,
+	[MIN_F] [varchar](50) NULL,
+	[CVP_F] [varchar](50) NULL,
+	[AVG_K] [varchar](50) NULL,
+	[MIN_K] [varchar](50) NULL,
+	[MAX_K] [varchar](50) NULL,
+	[CVP_K] [varchar](50) NULL,
+	[AVG_L] [varchar](50) NULL,
+	[MIN_L] [varchar](50) NULL,
+	[MAX_L] [varchar](50) NULL,
+	[CVP_L] [varchar](50) NULL,
+	[AVG_R] [varchar](50) NULL,
+	[MIN_R] [varchar](50) NULL,
+	[MAX_R] [varchar](50) NULL,
+	[CVP_R] [varchar](50) NULL,
+	[status] [numeric](1, 0) NULL,
+	[createdatetime] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Test] ADD  CONSTRAINT [DF_Test_createdatetime]  DEFAULT (getdate()) FOR [createdatetime]
+GO
+
+
