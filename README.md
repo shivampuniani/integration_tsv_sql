@@ -24,7 +24,7 @@ This project connects to a directory containing TSV files, processes them to ext
 3. Configure the database connection:
 
 Update the connection details in the config.ini file with your SQL Server credentials. Here's the format:   
-   [database]
+   [database]  
    server = SQLEXPRESS  
    database = Test_Database  
    username = sa  
