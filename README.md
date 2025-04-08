@@ -24,7 +24,6 @@ This project connects to a directory containing TSV files, processes them to ext
 3. Configure the database connection:
 
 Update the connection details in the config.ini file with your SQL Server credentials. Here's the format:   
-   ```bash
    [database]
    server = SQLEXPRESS  
    database = Test_Database  
@@ -34,7 +33,7 @@ Update the connection details in the config.ini file with your SQL Server creden
    filePath = <path_to_tsv_files>  
    fileContains = <file_name_contains>  
    fileSuccessPath = <path_to_success_directory>  
-   fileErrorPath = <path_to_error_directory>  <br />
+   fileErrorPath = <path_to_error_directory>
 
 
 Update the connection strings (if required) in main.py for both SQL Server and the TSV file handling.
