@@ -34,8 +34,9 @@ Update the connection details in the config.ini file with your SQL Server creden
    filePath = <path_to_tsv_files>  
    fileContains = <file_name_contains>  
    fileSuccessPath = <path_to_success_directory>  
-   fileErrorPath = <path_to_error_directory>
-   
+   fileErrorPath = <path_to_error_directory>  <br />
+
+
 Update the connection strings (if required) in main.py for both SQL Server and the TSV file handling.
 SQL Server: Update the SERVER, DATABASE, UID, and PWD placeholders in the config.ini file.
 TSV Files: Ensure the path to your TSV files is correct in the config.ini file.
